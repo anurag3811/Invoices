@@ -93,7 +93,7 @@ const Buyer = () => {
               <button
                 className=" bg-slate-500 px-4 py-2 rounded-lg hover:text-slate-50"
                 value={parseInt(contracts[0])}
-                disabled={isLoading || isFetching}
+                disabled={isLoading || isFetching || contracts[5].toString()=="true"}
                 onClick={async (e) => {
                   settemp(e.target.value);
                   await settle_invoice({
