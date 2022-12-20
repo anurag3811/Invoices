@@ -1,0 +1,111 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_buyer_pan",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_seller_pan",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_desc",
+				"type": "string"
+			}
+		],
+		"name": "create_invoice",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_index",
+				"type": "uint256"
+			}
+		],
+		"name": "delete_invoice",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_index",
+				"type": "uint256"
+			}
+		],
+		"name": "settle_invoice",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getinvoices",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "invoice_number",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "buyer_pan",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "seller_pan",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "desc",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "status",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "deleted",
+						"type": "bool"
+					},
+					{
+						"internalType": "address",
+						"name": "creator",
+						"type": "address"
+					}
+				],
+				"internalType": "struct Invoices.invoice[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
