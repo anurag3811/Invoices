@@ -7,7 +7,7 @@ import { ethers } from "ethers";
 import Selector2 from "../components/Selector2";
 import React from "react";
 
-const buyer = () => {
+const Buyer = () => {
   const mainaddress = "0x64F8C7C97196dFDA93d24e0540362d750241216E";
   const { Moralis, isWeb3Enabled, chainId: chainIdHex, account } = useMoralis();
   const [query, setquery] = useState("");
@@ -147,4 +147,4 @@ const buyer = () => {
   );
 };
 
-export default buyer;
+export default Buyer;
